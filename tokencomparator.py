@@ -14,6 +14,8 @@
 
 # Call the worker function check(list1, list2), e.g. check(suspect, checkagainst)
 
+# WARNING, TODO: The node with lowest token owns the range less than or equal to its token and the range greater than the highest token, which is also known as the “wrapping range. This script does not account for the wrapping range.
+
 def check(list1, list2):
     for suspect in list1:
         print('Suspect token {}'.format(suspect.membertoken))
